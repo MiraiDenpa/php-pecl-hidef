@@ -514,7 +514,7 @@ static int hidef_read_ini(hidef_parser_ctxt *ctxt TSRMLS_DC)
 		return 0;
 	}
 
-	zend_error(E_NOTICE, "hidef_read_ini %s", ini_path);
+	//zend_error(E_NOTICE, "hidef_read_ini %s", ini_path);
 	return hidef_walk_dir(ini_path, ".ini", hidef_parse_ini, ctxt TSRMLS_CC);
 }
 /* }}} */
